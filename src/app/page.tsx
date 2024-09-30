@@ -1,5 +1,6 @@
 
 import Head from "next/head";
+import Image from "next/image";
 import {AiFillLinkedin, AiFillGithub} from "react-icons/ai";
 
 
@@ -7,7 +8,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-green-500 text-white relative">
       <Head>
-        <title>Brandon's Personal Page</title>
+        <title>Brandon&apos;s Personal Page</title>
         <meta name="description" content="My personal page"/>
       </Head>
 
@@ -16,12 +17,14 @@ export default function Home() {
       </a>
 
       <section className="flex flex-col items-center text-center justify-center h-screen">
-        <h1 className="text-5xl font-bold">Hello, I'm Brandon</h1>
+        <h1 className="text-5xl font-bold">Hello, I&apos;m Brandon</h1>
         
-        <img
+        <Image
           src="/me.jpeg" 
           alt="Brandon's Photo"
-          className="w-32 h-32 rounded-full mt-6"
+          width={128}
+          height={128}
+          className="rounded-full mt-6"
         />
 
         <p className="text-xl mt-4">Software Engineer</p>
