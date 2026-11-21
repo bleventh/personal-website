@@ -4,8 +4,8 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Brandon's Personal Page",
-  description: "Personal Page for sharing my resume and projects I've worked on",
+  title: "Brandon Leventhal | Engineering Leadership",
+  description: "Brandon Leventhal is a Senior Engineering Manager at Rippling, previously Apple Wallet.",
 };
 
 export default function RootLayout({

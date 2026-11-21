@@ -1,5 +1,57 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+  font-family: Geist;
+  src: url("./fonts/GeistVF.woff") format("woff");
+  font-weight: 100 900;
+  font-display: swap;
+}
 
+:root {
+  color-scheme: light;
+  --paper: #f7f8f6;
+  --ink: #14211b;
+  --body: #3b4942;
+  --quiet: #53625a;
+  --link: #145743;
+  --line: #ced8d1;
+}
 
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 400 1rem/1.65 Geist, system-ui, sans-serif;
+}
+
+.shell { width: min(48rem, calc(100% - 3rem)); margin-inline: auto; padding: 4.75rem 0 5rem; }
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: start; padding-bottom: 2.9rem; }
+.portrait { display: block; width: 7.75rem; height: 7.75rem; margin-top: .35rem; border-radius: 1rem; border: 1px solid var(--line); object-fit: cover; }
+h1, h2, h3, p, ul { margin: 0; }
+h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); line-height: 1.02; letter-spacing: -.065em; font-weight: 710; margin: .55rem 0 .75rem; }
+.eyebrow, .date { color: var(--quiet); font-size: .875rem; }
+.headline { font-size: clamp(1.06rem, 2.4vw, 1.28rem); font-weight: 650; line-height: 1.35; }
+.summary { color: var(--body); margin-top: 1rem; max-width: 48ch; }
+.profile-links { display: flex; flex-wrap: wrap; gap: 1.3rem; margin-top: 1rem; }
+a { color: var(--link); font-weight: 580; text-decoration-thickness: .06em; text-underline-offset: .19em; }
+a:hover { text-decoration-thickness: .12em; }
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 4px; }
+
+section { border-top: 1px solid var(--line); padding-top: 1.85rem; }
+h2 { font-size: 1.75rem; letter-spacing: -.04em; line-height: 1.2; margin-bottom: .3rem; }
+.role { padding: 1.55rem 0; }
+.role + .role { border-top: 1px solid var(--line); }
+.role-heading { display: flex; justify-content: space-between; gap: .5rem 1rem; align-items: baseline; flex-wrap: wrap; }
+h3 { font-size: 1.3rem; letter-spacing: -.025em; }
+.date { white-space: nowrap; }
+.title { font-weight: 630; margin-bottom: .5rem; }
+.role p:not(.date,.title), .role ul { color: var(--body); }
+.role ul { padding-inline-start: 1.2rem; margin-top: .45rem; }
+.role li + li { margin-top: .32rem; }
+
+@media (max-width: 35rem) {
+  .shell { width: calc(100% - 2rem); padding-top: 2.5rem; }
+  .intro { grid-template-columns: minmax(0, 1fr); gap: 1.35rem; padding-bottom: 2rem; }
+  .portrait { grid-row: 1; width: 4.75rem; height: 4.75rem; margin: 0; border-radius: .75rem; }
+}
