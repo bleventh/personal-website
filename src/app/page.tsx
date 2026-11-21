@@ -17,14 +17,16 @@ export default function Home() {
             <a href="https://github.com/bleventh">GitHub</a>
           </nav>
         </div>
-        <Image
-          className="portrait"
-          src="/me.jpeg"
-          alt="Brandon Leventhal"
-          width={144}
-          height={144}
-          priority
-        />
+        <div className="portrait">
+          <Image
+            src="/brandon-portrait.jpeg"
+            alt="Brandon Leventhal"
+            width={2048}
+            height={1462}
+            sizes="(max-width: 35rem) 152px, 248px"
+            priority
+          />
+        </div>
       </header>
 
       <section aria-labelledby="experience">
@@ -70,7 +72,8 @@ export default function Home() {
           <ul>
             <li>Co-led Wallet Access and built a shared platform for issuing passes and credentials across devices, servers, and partners.</li>
             <li>Led engineering for Disney MagicMobile, including the ability for guests to share passes with family.</li>
-            <li>Was the first engineer on Apple Card, worked with Goldman Sachs on the integration, and owned scheduled payments. I was part of the small team that built Apple Cash.</li>
+            <li>Was the first engineer on Apple Card, worked with Goldman Sachs on the integration, and owned scheduled payments.</li>
+            <li>Part of the small team that built Apple Cash.</li>
           </ul>
         </article>
       </section>
