@@ -10,8 +10,7 @@ export default function Home() {
           <p className="headline">Senior Engineering Manager at Rippling</p>
           <p className="summary">
             I lead engineering teams building AI products and developer tools.
-            Previously, I co-led Apple Wallet Access and built Apple Card
-            and Apple Cash.
+            Previously, I co-led Apple Wallet Access and built Apple Card.
           </p>
           <nav aria-label="Profiles" className="profile-links">
             <a href="https://www.linkedin.com/in/brandon-leventhal">LinkedIn</a>
@@ -71,7 +70,7 @@ export default function Home() {
           <ul>
             <li>Co-led Wallet Access and built a shared platform for issuing passes and credentials across devices, servers, and partners.</li>
             <li>Led engineering for Disney MagicMobile, including the ability for guests to share passes with family.</li>
-            <li>Was the first engineer on Apple Card, worked with Goldman Sachs on the integration, and owned scheduled payments. I also built Apple Cash.</li>
+            <li>Was the first engineer on Apple Card, worked with Goldman Sachs on the integration, and owned scheduled payments. I was part of the small team that built Apple Cash.</li>
           </ul>
         </article>
       </section>
